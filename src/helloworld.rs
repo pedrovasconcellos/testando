@@ -10,7 +10,8 @@ mod tests {
 
     #[test]
     fn test_hello_world() {
-        assert_eq!(hello_world::get_hello_world(), "Hello, World!");
+        let result = hello_world::get_hello_world();
+        assert_eq!("Hello, World!", result);
     }
 }
 //rustc --test helloworld.rs -o helloworld_test && ./helloworld_test
